@@ -1,0 +1,14 @@
+---------------------------------------------------------------
+DEBIAN Realm startup at 2026-01-04 14:35:43.396
+---------------------------------------------------------------
+14:35:43.396  ------------------------------------------------------
+14:35:43.396  2026-01-04 14:35:43
+14:35:43.396  Diablo II: Resurrected running under Win10 Version 10.0.19043
+14:35:43.397  Vendor:  AMD
+14:35:43.397  Description: AMD Ryzen 5 5600G with Radeon Graphics         
+14:35:43.397  Total Physical Memory: 15341.77MB
+14:35:43.397  Application Path: Z:\home\charles\Downloads\Diablo II Resurrected\
+14:35:43.398  Local IP: 127.0.1.1
+14:35:43.398  Computer name: DEBIAN
+14:35:43.398  ------------------------------------------------------
+14:35:43.398  
