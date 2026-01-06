@@ -19,11 +19,22 @@
 body {
   
   background-color: var(--Grey-50);
-  color: var(--Grey-100);
+  /* color: var(--Grey-100); */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
 
   background-color: var(--White);
   
+}
+
+.commentContent {
+
+  display: flex;
+  justify-content: space-between;
+
 }
