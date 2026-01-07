@@ -26,12 +26,39 @@ body {
   align-items: center;
 }
 
-article {
+.comment {
 
   background-color: var(--White);
-  
+  display: grid;
+  grid-template-areas: 
+  'info info'
+  'contentText contentText'
+  'counter buttons'
+  ;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,min-content);
+  width: 22ch;
 }
 
+.info {
+
+  grid-area: info;
+}
+
+.contentText {
+
+  grid-area: contentText;
+}
+
+.counter {
+
+  grid-area: counter;
+}
+
+.buttons {
+
+  grid-row: buttons;
+}
 .commentContent {
 
   display: flex;
