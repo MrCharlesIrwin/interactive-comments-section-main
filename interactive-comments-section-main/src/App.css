@@ -37,7 +37,7 @@ body {
   ;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(3,min-content);
-  width: 22ch;
+  width: 32ch;
 }
 
 .info {
@@ -50,7 +50,7 @@ body {
   grid-area: contentText;
 }
 
-.counter {
+.commentCounter {
 
   grid-area: counter;
 }

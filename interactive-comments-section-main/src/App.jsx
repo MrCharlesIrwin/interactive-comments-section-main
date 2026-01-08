@@ -19,7 +19,7 @@ function App() {
             {/* <button>Reply</button> */}
             </div>
 
-              <p className='content'>Lorem i id ratione quos repudiandae eligendi alias cupiditate reiciendis repellat soluta doloribus distinctio sapiente vitae earum deleniti, necessitatibus officiis praesentium ex reprehenderit saepe. Voluptatum, quas?
+              <p className='contentText'>Lorem i id ratione quos repudiandae eligendi alias cupiditate reiciendis repellat soluta doloribus distinctio sapiente vitae earum deleniti, necessitatibus officiis praesentium ex reprehenderit saepe. Voluptatum, quas?
               Nemo aut repellendus perspiciatisciinus temporibus, voluptate deleniti ut tempora soluta saepe assumenda. Amet earum sunt aliquid odit.
               </p>
 
