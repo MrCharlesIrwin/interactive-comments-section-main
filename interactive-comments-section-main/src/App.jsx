@@ -1,11 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect } from 'react'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+    const [jsonData, setJsonData] = useState(null)
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('../data.json')
+        const result = await response.json()
+        setJsonData(result)
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+
+    fetchData()
+  }, [])
+  
   return (
     <>
       <main>
@@ -14,7 +28,7 @@ function App() {
        <div className='info'>
 
             <img src="" alt="#" />
-            <strong>ambyrobson</strong>
+            <strong>{jsonData.currentUser.username}</strong>
             <span>1 month ago</span>
             {/* <button>Reply</button> */}
             </div>
