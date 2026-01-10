@@ -28,7 +28,7 @@ function App() {
        <div className='info'>
 
             <img src="" alt="#" />
-            <strong>{jsonData.currentUser.username}</strong>
+            <strong>{jsonData?.currentUser?.username}</strong>
             <span>1 month ago</span>
             {/* <button>Reply</button> */}
             </div>
