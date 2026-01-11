@@ -19,6 +19,14 @@ function App() {
 
     fetchData()
   }, [])
+
+  // Counter
+  const [counterValue,setCounterValue] = useState(0)
+
+  const handlCounterValue = (operation) => {
+  if(operation === 'decrease') setCounterValue(counterValue => counterValue - 1)
+  if(operation === 'increase') setCounterValue(counterValue => counterValue + 1)
+  }
   
   return (
     <>
@@ -27,10 +35,15 @@ function App() {
 
        <div className='info'>
 
-            <img src="" alt="#" />
+            {/* <img src="" alt="#" /> */}
             <strong>{jsonData?.currentUser?.username}</strong>
             <span>1 month ago</span>
-            {/* <button>Reply</button> */}
+            <div className="button__container">
+              <button onClick={() =>handlCounterValue('decrease') }></button>
+              <span>{counterValue}</span>
+              <button onClick={() =>handlCounterValue('increase')}></button>
+              </div>           
+            <button>Reply</button>
             </div>
 
               <p className='contentText'>Lorem i id ratione quos repudiandae eligendi alias cupiditate reiciendis repellat soluta doloribus distinctio sapiente vitae earum deleniti, necessitatibus officiis praesentium ex reprehenderit saepe. Voluptatum, quas?
@@ -49,7 +62,7 @@ function App() {
 
         <section className='replySection'>
 
-          <img src="" alt="#" />
+          {/* <img src="" alt="#" /> */}
           <form action="#">
 
             <div>
