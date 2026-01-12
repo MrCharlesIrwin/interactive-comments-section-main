@@ -33,7 +33,7 @@ body {
   grid-template-areas: 
   'info info'
   'contentText contentText'
-  'counter buttons'
+  'buttonContainer reply'
   ;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(3,min-content);
@@ -50,18 +50,37 @@ body {
   grid-area: contentText;
 }
 
-.commentCounter {
+.buttonContainer {
 
-  grid-area: counter;
+  grid-area: buttonContainer;
 }
 
-.buttons {
+.reply {
 
-  grid-row: buttons;
+  grid-area: reply;
 }
-.commentContent {
 
-  display: flex;
-  justify-content: space-between;
+/* Form */
 
+form {
+
+  display: grid;
+  grid-template-areas: 
+  'form__InputTextWrapper form__InputTextWrapper'
+  'form__InputImage form__InputButton'
+  ;
+}
+
+.form__InputImage {
+
+  grid-area: form__InputImage;
+}
+.form__InputTextWrapper {
+
+  grid-area: form__InputTextWrapper;
+}
+
+.form__InputButton {
+
+  grid-area: form__InputButton;
 }

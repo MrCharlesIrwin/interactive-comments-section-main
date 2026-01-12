@@ -38,26 +38,20 @@ function App() {
             {/* <img src="" alt="#" /> */}
             <strong>{jsonData?.currentUser?.username}</strong>
             <span>1 month ago</span>
-            <div className="button__container">
-              <button onClick={() =>handlCounterValue('decrease') }></button>
-              <span>{counterValue}</span>
-              <button onClick={() =>handlCounterValue('increase')}></button>
-              </div>           
-            <button>Reply</button>
             </div>
+
 
               <p className='contentText'>Lorem i id ratione quos repudiandae eligendi alias cupiditate reiciendis repellat soluta doloribus distinctio sapiente vitae earum deleniti, necessitatibus officiis praesentium ex reprehenderit saepe. Voluptatum, quas?
               Nemo aut repellendus perspiciatisciinus temporibus, voluptate deleniti ut tempora soluta saepe assumenda. Amet earum sunt aliquid odit.
               </p>
 
-            <div className='commentCounter'></div>
-
-            <div className='buttons'>
-              
-            <button>Delete</button>
-            <button>Reply</button>
-            </div>
-
+            <div className="buttonContainer">
+              <button onClick={() =>handlCounterValue('decrease') }></button>
+              <span>{counterValue}</span>
+              <button onClick={() =>handlCounterValue('increase')}></button>
+              </div>          
+         
+            <button className='reply'>Reply</button>
         </article>
 
         <section className='replySection'>
@@ -65,13 +59,16 @@ function App() {
           {/* <img src="" alt="#" /> */}
           <form action="#">
 
-            <div>
+                <img className='form__InputImage' src="./images/avatars/image-juliusomo.webp" alt="#" />
+            <div className='form__InputTextWrapper'>
 
-            <label htmlFor="textBox"></label>
-            <input type="text" />
+            <label htmlFor="textBox">
+               <input id='textBox' type="text" />
+            </label>
+           
             </div>
 
-            <button>SEND</button>
+            <button className='form__InputButton'>SEND</button>
           </form>
         </section>
       </main>
