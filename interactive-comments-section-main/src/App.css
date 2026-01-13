@@ -40,6 +40,15 @@ body {
   width: 32ch;
 }
 
+@media (width>800px) {
+
+  .comment {
+    grid-template-areas: 
+    ' buttonContainer info reply'
+    'buttonContainer contentText contentText'
+    ;
+  }
+}
 .info {
 
   grid-area: info;
@@ -71,6 +80,14 @@ form {
   ;
 }
 
+@media (width>800px) {
+
+  form {
+    grid-template-areas: 
+    'form__InputImage form__InputTextWrapper form__InputButton '
+    ;
+  }
+}
 .form__InputImage {
 
   grid-area: form__InputImage;
