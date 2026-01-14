@@ -48,6 +48,11 @@ body {
     'buttonContainer contentText contentText'
     ;
   }
+
+  .buttonContainer {
+
+
+  }
 }
 .info {
 
@@ -62,6 +67,16 @@ body {
 .buttonContainer {
 
   grid-area: buttonContainer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width>800px) {
+  .buttonContainer {
+
+    flex-direction: column;
+  }
 }
 
 .reply {
